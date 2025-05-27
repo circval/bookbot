@@ -1,7 +1,8 @@
+import sys
 def word_count(text):
     split_words = text.split()
     print("============ BOOKBOT ============")
-    print("Analyzing book found at books/frankenstein.txt...")
+    print("Analyzing book found at", sys.argv[1])
     print("----------- Word Count ----------")
     print(f"Found {len(split_words)} total words")
 
