@@ -1,4 +1,4 @@
-from stats import word_count, char_count
+from stats import word_count, char_count, char_sort
 
 def get_book_test(path_to_file):
     with open(path_to_file) as f:
@@ -10,5 +10,7 @@ def main():
     text = (get_book_test(path_to_file))
     return text
 
-word_count(main())
-char_count(main())
+text = main()
+word_count(text)
+char_counts = char_count(text)
+sorted_counts = char_sort(char_counts)
