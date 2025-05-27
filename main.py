@@ -1,4 +1,4 @@
-from stats import word_count
+from stats import word_count, char_count
 
 def get_book_test(path_to_file):
     with open(path_to_file) as f:
@@ -11,3 +11,4 @@ def main():
     return text
 
 word_count(main())
+char_count(main())
